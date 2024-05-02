@@ -1,27 +1,23 @@
 .Notifications {
-	padding: 2em;
-	border: 2px dashed red;
+    border: 1px dashed #c1384c ;
+    padding: 10px;
+    width: 400px;
 }
 
-button[aria-label='Close'] {
-	border: none;
-	background: none;
+
+.Notifications [data-notification-type="default"] {
+    color: blue;
 }
 
-.notification-header {
-	display: flex;
-	justify-content: space-between;
+.Notifications [data-notification-type="urgent"] {
+    color: red;
 }
-
-.menuItem {
-	text-align: right;
+.placing{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    
 }
-
-[data-notification-type='default'] {
-	color: blue;
-}
-
-[data-urgent],
-[data-notification-type='urgent'] {
-	color: red;
+.menuItem{
+    text-align: end;
 }
